@@ -14,13 +14,13 @@ body {
 
 }
 .heading {
-
+    font-weight: bold;
 }
 .center {
     text-align: center;
 }
 .float-left {
-
+    float: left;
 }
 .box-shadow {
     -webkit-box-shadow: 9px 8px 27px -5px rgba(92,92,92,1);
