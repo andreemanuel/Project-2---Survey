@@ -1,7 +1,20 @@
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+}  
 * {
     font-family: Noto Serif JP, sans-serif;
     padding: 0px;
     margin: 0px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
 body {
@@ -27,15 +40,140 @@ body {
     -moz-box-shadow: 9px 8px 27px -5px rgba(92,92,92,1);
     box-shadow: 9px 8px 27px -5px rgba(92,92,92,1);
 }
-header {
+::placeholder {
+    font-style: italic;
+}
 
+#pagewrapper {
+	background: lightsalmon;
+	display: flex;
+	justify-content: center;
+}
+header {
+    background: lightblue;
+    margin: 0 0 1.5em 0;
+    padding-top: ;
+}
+#title {
+    background: lightgray;
+    padding-top: 0.5em;
+}
+#description {
+    background: lightyellow;
+}
+#survey-form {
+	background: lightgray;
+	width: 900px;
+	height: 670px;
+    display: grid;
+    grid-template-columns: 
+        1fr 1fr;
+    grid-template-rows:    
+        auto auto auto auto auto auto
+        auto auto auto auto auto auto;
+    grid-template-areas: 
+        "q1 a1"
+        "q2 a2"
+        "q3 a3"
+        "q4 a4"
+        "q5 a5"
+        "q6 a6"
+        "q7 a7"
+        "q8 a8"
+        "q9 a9"
+        "q10 a10"
+        "q11 a11"
+        "q12 a12"
+        "submit submit";
+	justify-content: ;
+	align-content: ;
+}
+.question1 {
+    grid-area: q1;
+}
+.question2 {
+    grid-area: q2;
+}
+.question3 {
+    grid-area: q3;
+}
+.question4 {
+    grid-area: q4;
+}
+.question5 {
+    grid-area: q5;
+}
+.question6 {
+    grid-area: q6;
+}
+.question7 {
+    grid-area: q7;
+}
+.question8 {
+    grid-area: q8;
+}
+.question9 {
+    grid-area: q9;
+}
+.question10 {
+    grid-area: q10;
+}
+.question11 {
+    grid-area: q11;
+}
+.question12 {
+    grid-area: q12;
+}
+
+.answer1 {
+    grid-area: a1;
+}
+.answer2 {
+    grid-area: a2;
+}
+.answer3 {
+    grid-area: a3;
+}
+.answer4 {
+    grid-area: a4;
+}
+.answer5 {
+    grid-area: a5;
+}
+.answer6 {
+    grid-area: a6;
+}
+.answer7 {
+    grid-area: a7;
+}
+.answer8 {
+    grid-area: a8;
+}
+.answer9 {
+    grid-area: a9;
+}
+.answer10 {
+    grid-area: a10;
+}
+.answer11 {
+    grid-area: a11;
+}
+.answer12 {
+    grid-area: a112;
+}
+
+
+
+
+#submit {
+    grid-area: submit;
 }
 main {
 
 }
 footer {
     text-align: center;
-    background-color: transparent;
+    background-color: lightgreen;
     padding: 14px 0px;
     font-size: 12px;
 }

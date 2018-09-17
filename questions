@@ -1,9 +1,7 @@
-Do you currently have a working smart phone or not?
-    yes
-    no
-Do you currently have an account with a mobile service provider or not?
-    yes
-    no
+Name
+Email
+Age
+    input number
 How many working smart phones do you currently have?
     input
 What type of smart phone do you currently use?**
@@ -30,7 +28,6 @@ Which smart phone manufacturer(s) are you using?**
     Xiaomi
     Alcatel
     Other...please specify
-
 Which one of the following mobile service provider do you use?**
     AT&T
     Boost Mobile
@@ -57,22 +54,9 @@ In a typical weekday, about how much time in total do you spend using your smart
     input minute
 In a typical month, how much money do you spend (in US$) on your mobile services? Includes phone bill, data bill, and any other subscriptions.
     input
-Which one of the following activities do you do on your smart phone?**
-    General internet use (other than using social media websites)
-    Make or receive phone calls
-    Play games
-    Play music
-    Play podcasts
-    Watch videos
-    Purchase products or services
-    Record videos
-    Send or receive texts
-    Send or receive videos
-    Take photos
-    Use social networking sites
-    Other...please specify
 Which one of the following activities would you say you use your smart phone for the most?
-    General internet use (other than using social media websites)
+    Reading
+    Studying
     Make or receive phone calls
     Play games
     Play music
