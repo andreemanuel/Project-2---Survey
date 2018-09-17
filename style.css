@@ -34,7 +34,10 @@ main {
 
 }
 footer {
-
+    text-align: center;
+    background-color: transparent;
+    padding: 14px 0px;
+    font-size: 12px;
 }
 
 
