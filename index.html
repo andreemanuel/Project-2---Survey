@@ -24,19 +24,27 @@
         <form id="survey-form" action="#">
 			<div class="row">
                 <label for="name" class="question">Your Name:</label>
-                <input name="name" type="text" placeholder="Hugh Jazz" required class="answer">
+                <div class="answer">
+                    <input name="name" type="text" placeholder="Hugh Jazz" required class="">
+                </div>  
             </div>
             <div class="row">
                 <label for="email" class="question">Your Email: </label>
-                <input name="email" type="email" placeholder="your@email.com" required class="answer">
+                <div class="answer">
+                    <input name="email" type="email" placeholder="your@email.com" required class="">
+                </div>
             </div>
             <div class="row">
                 <label for="age" class="question">Your Age:</label>
-                <input type="number" name="age" id="" class="answer">
+                <div class="answer">
+                    <input type="number" name="age" id="" class="">
+                </div>
             </div>
             <div class="row">
                 <label for="phone-qty" class="question">How many working smart phones do you currently use?</label>
-                <input type="number" name="phone-qty" id="" class="answer">
+                <div class="answer">
+                    <input type="number" name="phone-qty" id="" class="">
+                </div>
             </div>
             <div class="row">
                 <label for="phone-brand" class="question">Which smart phone manufacturer(s) are you currently using?<p>(Check all that apply)</p></label>
@@ -126,8 +134,16 @@
                 </div>
                 <div class="answer checkbox-container">
                     <ul id="provider"">
-                        <li class="checkbox-answers"><label for="att"><input type="checkbox" name="att" id="" value="1">AT&T</label></li>
-                        <li class="checkbox-answers"><label for="boost"><input type="checkbox" name="boost" id="" value="2">Boost Mobile</label></li>
+                        <li class="checkbox-answers">
+                            <label for="att">
+                                <input type="checkbox" name="att" id="" value="1">AT&T
+                            </label>
+                        </li>
+                        <li class="checkbox-answers">
+                            <label for="boost">
+                                <input type="checkbox" name="boost" id="" value="2">Boost Mobile
+                            </label>
+                        </li>
                         <li class="checkbox-answers"><label for="cricket"><input type="checkbox" name="cricket" id="" value="3">Cricket</label></li>
                         <li class="checkbox-answers"><label for="metro"><input type="checkbox" name="metro" id="" value="4">MetroPCS</label></li>
                         <li class="checkbox-answers"><label for="sprint"><input type="checkbox" name="sprint" id="" value="5">Sprint</label></li>
@@ -173,11 +189,29 @@
             </div>
             -->
             <div class="row">
-                <div class="question"><label for="phone-usage">In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?</label></div>
-                
+                <div class="question">
+                    <label for="phone-usage">In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?</label>
+                </div>
+                <div class="answer dropdown">
+                    <select name="phone-use" id="phone-use">
+                        <option disabled value selected>Please choose an answer</option>
+                        <option value="work3">Much more often for work</option>
+                        <option value="work2">Somewhat more often for work</option>
+                        <option value="work1">Slightly more often for work</option>
+                        <option value="equal">About an equal amount for both work and personal use</option>
+                        <option value="personal1">Slightly more often for personal use</option>
+                        <option value="personal2">Somewhat more often for personal use</option>
+                        <option value="personal3">Much more often for personal use</option>
+                    </select>
+                </div>
             </div>
             <div class="row">
-
+                <div class="question">
+                    <label for="time-spent">In a typical weekday, about how much time in total do you spend using your smart phone?</label>
+                </div>
+                <div class="answer">
+                    <input type="number" name="time-spent" id="time-spent">
+                </div>
             </div>
             <div class="row">
 

@@ -1,76 +1,76 @@
-Name
-Email
-Age
-    input number
-How many working smart phones do you currently have?
-    input
-What type of smart phone do you currently use?**
-    android
-    iphone
-    other...please specify
-Which smart phone manufacturer(s) are you using?**
-    Apple
-    Samsung
-    Blackberry
-    Nokia
-    Google
-    Motorola
-    Sony
-    LG
-    Lenovo
-    Asus
-    ZTE
-    Oppo
-    HTC
-    Vivo
-    OnePlus
-    Huawei
-    Xiaomi
-    Alcatel
-    Other...please specify
-Which one of the following mobile service provider do you use?**
-    AT&T
-    Boost Mobile
-    Cricket
-    MetroPCS
-    Sprint
-    T-Mobile
-    Trac-Fone
-    US Cellular
-    Verizon Wireless
-    Virgin Mobile
-    I do not have a smart phone
-    My provider is not listed above
-In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?
-    Much more often for work
-    Somewhat more often for work
-    Slightly more often for work
-    About an equal amount for both work and personal usage
-    Slightly more often for personal use
-    Somewhat more often for personal use
-    Nuch more often for personal use
-In a typical weekday, about how much time in total do you spend using your smart phone?
-    input hours
-    input minute
-In a typical month, how much money do you spend (in US$) on your mobile services? Includes phone bill, data bill, and any other subscriptions.
-    input
-Which one of the following activities would you say you use your smart phone for the most?
-    Reading
-    Studying
-    Make or receive phone calls
-    Play games
-    Play music
-    Play podcasts
-    Watch videos
-    Purchase products or services
-    Record videos
-    Send or receive texts
-    Send or receive videos
-    Take photos
-    Use social networking sites
-    Other...please specify
-Can you spend an entire day without using your smart phone?
-    yes
-    no
-    maybe
-    of course not!
+1) Name
+2) Email
+3) Age
+        input number
+4) How many working smart phones do you currently have?
+        input
+5) What type of smart phone do you currently use?**
+        android
+        iphone
+        other...please specify
+6) Which smart phone manufacturer(s) are you using?**
+        Apple
+        Samsung
+        Google
+        Motorola
+        Sony
+        LG
+        Lenovo
+        Asus
+        ZTE
+        Oppo
+        HTC
+        Vivo
+        OnePlus
+        Huawei
+        Xiaomi
+        Alcatel
+        Blackberry
+        Nokia
+        Other...please specify
+7) Which one of the following mobile service provider do you use?**
+        AT&T
+        Boost Mobile
+        Cricket
+        MetroPCS
+        Sprint
+        T-Mobile
+        Trac-Fone
+        US Cellular
+        Verizon Wireless
+        Virgin Mobile
+        I do not have a smart phone
+        My provider is not listed above
+8) In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?
+        Much more often for work
+        Somewhat more often for work
+        Slightly more often for work
+        About an equal amount for both work and personal usage
+        Slightly more often for personal use
+        Somewhat more often for personal use
+        Much more often for personal use
+9) In a typical weekday, about how much time in total do you spend using your smart phone?
+        input hours
+        input minute
+10) In a typical month, how much money do you spend (in US$) on your mobile services? Includes phone bill, data bill, and any other subscriptions.
+        input
+11) Which one of the following activities would you say you use your smart phone for the most?
+        Reading
+        Studying
+        Make or receive phone calls
+        Play games
+        Play music
+        Play podcasts
+        Watch videos
+        Purchase products or services
+        Record videos
+        Send or receive texts
+        Send or receive videos
+        Take photos
+        Use social networking sites
+        Other...please specify
+12) Can you spend an entire day without using your smart phone?
+        yes
+        no
+        maybe
+        of course not!
