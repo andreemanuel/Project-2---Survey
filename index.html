@@ -14,53 +14,186 @@
 <body>
     <header>
         <h1 id="title" class="main heading center ">
-            Smart Phone User Survey
+            Smart Phone Consumer Survey
         </h1>
         <p id="description" class="sub heading center">
             Hi 
         </p>
     </header>
     <main id=pagewrapper>
-        <form id="survey-form">
-			<div class="question1">
+        <form id="survey-form" action="#">
+			<div class="row">
+                <label for="name" class="question">Your Name:</label>
+                <input name="name" type="text" placeholder="Hugh Jazz" required class="answer">
+            </div>
+            <div class="row">
+                <label for="email" class="question">Your Email: </label>
+                <input name="email" type="email" placeholder="your@email.com" required class="answer">
+            </div>
+            <div class="row">
+                <label for="age" class="question">Your Age:</label>
+                <input type="number" name="age" id="" class="answer">
+            </div>
+            <div class="row">
+                <label for="phone-qty" class="question">How many working smart phones do you currently use?</label>
+                <input type="number" name="phone-qty" id="" class="answer">
+            </div>
+            <div class="row">
+                <label for="phone-brand" class="question">Which smart phone manufacturer(s) are you currently using?<p>(Check all that apply)</p></label>
+                <div class="answer checkbox-container">
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Apple" id="">
+                        <label for="Apple">Apple</label>
+                    </div>  
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Samsung" id="">
+                        <label for="Samsung">Samsung</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Google" id="">
+                        <label for="Google">Google</label>
+                    </div>  
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Motorola" id="">
+                        <label for="Motorola">Motorola</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Sony" id="">
+                        <label for="Sony">Sony</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="LG" id="">
+                        <label for="LG">LG</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Lenovo" id="">
+                        <label for="Lenovo">Lenovo</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Asus" id="">
+                        <label for="Asus">Asus</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="ZTE" id="">
+                        <label for="ZTE">ZTE</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Oppo" id="">
+                        <label for="Oppo">Oppo</label>
+                    </div>  
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="HTC" id="">
+                        <label for="HTC">HTC</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Vivo" id="">
+                        <label for="Vivo">Vivo</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="OnePlus" id="">
+                        <label for="OnePlus">OnePlus</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Huawei" id="">
+                        <label for="Huawei">Huawei</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Xiaomi" id="">
+                        <label for="Xiaomi">Xiaomi</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Alcatel" id="">
+                        <label for="Alcatel">Alcatel</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="BlackBerry" id="">
+                        <label for="BlackBerry">BlackBerry</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Nokia" id="">
+                        <label for="Nokia">Nokia</label>
+                    </div>
+                    <div class="checkbox-answers">
+                        <input type="checkbox" name="Other" id="">
+                        <label for="Other">Other</label>
+                        <input type="text" name="Other" placeholder="Please specify" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="question">
+                    <label for="provider">Which one of the following mobile service provider are you using?<p>(Check all that apply)</p></label>
+                </div>
+                <div class="answer checkbox-container">
+                    <ul id="provider"">
+                        <li class="checkbox-answers"><label for="att"><input type="checkbox" name="att" id="" value="1">AT&T</label></li>
+                        <li class="checkbox-answers"><label for="boost"><input type="checkbox" name="boost" id="" value="2">Boost Mobile</label></li>
+                        <li class="checkbox-answers"><label for="cricket"><input type="checkbox" name="cricket" id="" value="3">Cricket</label></li>
+                        <li class="checkbox-answers"><label for="metro"><input type="checkbox" name="metro" id="" value="4">MetroPCS</label></li>
+                        <li class="checkbox-answers"><label for="sprint"><input type="checkbox" name="sprint" id="" value="5">Sprint</label></li>
+                        <li class="checkbox-answers"><label for="tmob"><input type="checkbox" name="tmob" id="" value="6">T-Mobile</label></li>
+                        <li class="checkbox-answers"><label for="trac"><input type="checkbox" name="trac" id="" value="7">Trac-Fone</label></li>
+                        <li class="checkbox-answers"><label for="usc"><input type="checkbox" name="usc" id="" value="8">US Cellular</label></li>
+                        <li class="checkbox-answers"><label for="verizon"><input type="checkbox" name="verizon" id="" value="9">Verizon Wireless</label></li>
+                        <li class="checkbox-answers"><label for="virgin"><input type="checkbox" name="virgin" id="" value="10">Virgin Mobile</label></li>
+                        <li class="checkbox-answers"><label for="nothave"><input type="checkbox" name="nothave" id="" value="11">I don't have a smart phnone</label></li>
+                        <li class="checkbox-answers"><label for="notlist"><input type="checkbox" name="notlist" id="" value="12">My provider is not listed above</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="question">
+                    <label for="brand">Which smart phone manufacturer(s) are you using?</label>
+                </div>
+                <div class="answer">
+                    <select name="brand" id="brand" class="dropdown">
+                        <option value="apple">Apple</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="google">Google</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="sony">Sony</option>
+                        <option value="LG">LG</option>
+                        <option value="lenovo">Lenovo</option>
+                        <option value="asus">Asus</option>
+                        <option value="zte">ZTE</option>
+                        <option value="oppo">Oppo</option>
+                        <option value="htc">HTC</option>
+                        <option value="vivo">Vivo</option>
+                        <option value="oneplus">OnePlus</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="alcatel">Alcatel</option>
+                        <option value="bb">BlackBerry</option>
+                        <option value="nokia">Nokia</option>
+                        <option value="notlist">My smartphone brand is not listed here</option>
+                    </select>
+                </div>
 
             </div>
-            <div class="question2"></div>
-            <div class="question3"></div>
-            <div class="question4"></div>
-            <div class="question5"></div>
-            <div class="question6"></div>
-            <div class="question7"></div>
-            <div class="question8"></div>
-            <div class="question9"></div>
-            <div class="question10"></div>
-            <div class="question11"></div>
-            <div class="question12"></div>
+            -->
+            <div class="row">
+                <div class="question"><label for="phone-usage">In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?</label></div>
+                
+            </div>
+            <div class="row">
 
-            <div class="answer1">
-                <input type="text" placeholder="Steve Jobs" required>
             </div>
-            <div class="answer2">
-                <input type="text" placeholder="your@email.com" required>
+            <div class="row">
+
             </div>
-            <div class="answer3"></div>
-            <div class="answer4"></div>
-            <div class="answer5"></div>
-            <div class="answer6"></div>
-            <div class="answer7"></div>
-            <div class="answer8"></div>
-            <div class="answer9"></div>
-            <div class="answer10"></div>
-            <div class="answer11"></div>
-            <div class="answer12"></div>
-					
-								
+            <div class="row">
+
+            </div>
             <button id="submit" type="submit">Let's do this</button>
         </form>
 
     </main>
+    
+    
     <footer>
         <span id="footer">2018 &copy Dre Emanuel | A <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> Project</span>
     </footer>
 </body>
 </html>
+
