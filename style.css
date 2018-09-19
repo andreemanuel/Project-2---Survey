@@ -17,7 +17,8 @@ html {
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 body {
-    background: rgb(201, 250, 246);
+    background: url("https://cdn.tutsplus.com/psd/uploads/2014/02/create-a-geometric-pattern-in-photoshop-cover-canvas-with-pattern.jpg"), lightgrey;
+    color: var(--black);
 }
 .main {
 
@@ -45,31 +46,35 @@ body {
 ::placeholder {
     font-style: italic;
 }
-
 #pagewrapper {
-	background: lightsalmon;
+	background: transparent;
 	display: flex;
-	justify-content: center;
+    justify-content: center;
 }
 header {
-    background: lightblue;
+    background: rgb(73, 27, 34);
     margin: 0 0 1.5em 0;
-    padding-top: ;
+    padding: 0 0 1em 0;
+    color: peachpuff;
 }
 #title {
-    background: lightgray;
+    background: transparent;
     padding-top: 0.5em;
+    font-family: "Acme";
+    font-size: 2.5em;
 }
 #description {
-    background: lightyellow;
+    background: transparent;
+    color: lightgray;
 }
 main {
 
 }
 #survey-form {
-	background: lightgray;
+	background: azure;
 	width: 900px;
-	height: 670px;
+    height: auto;
+    padding: 0.7em 1.5em 1em 1.5em;
     display: flex;
     flex-direction: column;
 	justify-content: ;
@@ -77,13 +82,15 @@ main {
 }
 .row {
     display: flex;
+    margin: 0.5em 0;
+    justify-content: center;
 }
-
 .question {
-    width: 34%;
+    width: 40%;
     justify-content: flex-end;
     align-content: flex-end;
     text-align: right;
+    font-style: italic;
 }
 main
 p {
@@ -92,39 +99,70 @@ p {
 }
 .answer {
     width: 66%;
+    padding: 0 1.3em;
+    font-size: 0.75em;
 }
-
-.checkbox-container {
+.answer
+span {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.checkbox-container,
+.radio-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0em;
     justify-content: flex-start;
 }
 .checkbox-container
 input,
 label {
-    padding: 2px;
+    padding: 2px 3px;
+    margin: 2px;
 }
-.checkbox-answers {
-    width: 145px;
+.radio-container
+input, 
+label {
+    padding: 2px 3px;;
+    margin: 2px;
+}
+
+.checkbox-answers,
+.radio-answers {
+    width: 220px;
     display: inline-flex;
 }
-
-
-
-
-
-
+textarea {
+    height: 50px;
+    resize: vertical horizontal;
+    width: 66%;
+}
+#name, 
+#email,
+#dropdown {
+    width: 66%;
+}
 #submit {
-    grid-area: submit;
+    width: 20%;
+    justify-self: center;
+    padding: 0.7em;
+    background: rgb(113, 231, 206);
+    font-family: Acme;
+    font-size: 1em;
+    color: var(--black);
+    opacity: 0.9;
 }
 
 footer {
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(73, 27, 34);
+    color: antiquewhite;
     padding: 14px 0px;
     font-size: 12px;
+    margin-top: 2em;
 }
-
+footer 
+a {
+    color: teal;
+}
 
 

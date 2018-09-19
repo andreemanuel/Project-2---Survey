@@ -12,38 +12,38 @@
     <!--delete/comment code before publishing-->
 </head>
 <body>
-    <header>
+    <header class="box-shadow">
         <h1 id="title" class="main heading center ">
-            Smart Phone Consumer Survey
+            Consumer Survey
         </h1>
         <p id="description" class="sub heading center">
-            Hi 
+            How attached are you to your phone?
         </p>
     </header>
-    <main id=pagewrapper>
+    <main id=pagewrapper ">
         <form id="survey-form" action="#">
 			<div class="row">
-                <label for="name" class="question">Your Name:</label>
+                <label id="name-label" for="name" class="question">Your Name:</label>
                 <div class="answer">
-                    <input name="name" type="text" placeholder="Hugh Jazz" required class="">
+                    <input id="name" name="name" type="text" placeholder="Hugh Jazz" required class="">
                 </div>  
             </div>
             <div class="row">
-                <label for="email" class="question">Your Email: </label>
+                <label id="email-label" for="email" class="question">Your Email: </label>
                 <div class="answer">
-                    <input name="email" type="email" placeholder="your@email.com" required class="">
+                    <input id="email" name="email" type="email" placeholder="your@email.com" required class="">
                 </div>
             </div>
             <div class="row">
-                <label for="age" class="question">Your Age:</label>
+                <label  id="number-label" for="age" class="question">Your Age:</label>
                 <div class="answer">
-                    <input type="number" name="age" id="" class="">
+                    <input id="number" type="number" name="age" id="" class="" required min="15" placeholder="15+ only">
                 </div>
             </div>
             <div class="row">
-                <label for="phone-qty" class="question">How many working smart phones do you currently use?</label>
+                <label for="phone-qty" class="question">How many working smart phones are you currently using?</label>
                 <div class="answer">
-                    <input type="number" name="phone-qty" id="" class="">
+                    <input type="number" name="phone-qty" id="" class="" required min="0">
                 </div>
             </div>
             <div class="row">
@@ -133,7 +133,7 @@
                     <label for="provider">Which one of the following mobile service provider are you using?<p>(Check all that apply)</p></label>
                 </div>
                 <div class="answer checkbox-container">
-                    <ul id="provider"">
+                    <ul id="provider">
                         <li class="checkbox-answers">
                             <label for="att">
                                 <input type="checkbox" name="att" id="" value="1">AT&T
@@ -193,7 +193,7 @@
                     <label for="phone-usage">In a typical weekday, do you use your smart phone most often for work, for personal reasons, or about an equal amount on both?</label>
                 </div>
                 <div class="answer dropdown">
-                    <select name="phone-use" id="phone-use">
+                    <select name="phone-use" id="dropdown">
                         <option disabled value selected>Please choose an answer</option>
                         <option value="work3">Much more often for work</option>
                         <option value="work2">Somewhat more often for work</option>
@@ -210,21 +210,66 @@
                     <label for="time-spent">In a typical weekday, about how much time in total do you spend using your smart phone?</label>
                 </div>
                 <div class="answer">
-                    <input type="number" name="time-spent" id="time-spent">
+                    <input type="number" name="time-spent" id="time-spent" max="24" min="0" placeholder="">
+                    <span>hours</span>
                 </div>
             </div>
             <div class="row">
-
+                <div class="question">
+                    <label for="spend">In a typical month, how much money do you spend (in USD) on your mobile service(s)? <p>(This includes phone bills, data bills, and any other subscriptions)</p></label>
+                </div>
+                <div class="answer">
+                    <input type="number" name="spend" id="spend" min="0" placeholder="US$">
+                </div>
             </div>
             <div class="row">
-
+                <div class="question">
+                    <label for="activities">Which one of the following activities would you say you use your smart phone for<strong><em> the most</strong></em>?</label>
+                </div>
+                <div class="answer radio-container">
+                    <ul id="activities">
+                        <li class="radio-answers"><label for="reading"><input type="radio" name="activities" id="" value="1">Reading</label></li>
+                        <li class="radio-answers"><label for="studying"><input type="radio" name="activities" id="" value="2">Studying</label></li>
+                        <li class="radio-answers"><label for="call"><input type="radio" name="activities" id="" value="3">Make or receive phone calls</label></li>
+                        <li class="radio-answers"><label for="game"><input type="radio" name="activities" id="" value="4">Playing video games</label></li>
+                        <li class="radio-answers"><label for="music"><input type="radio" name="activities" id="" value="5">Playing music</label></li>
+                        <li class="radio-answers"><label for="podcast"><input type="radio" name=activities"" id="" value="6">Listening to podcasts</label></li>
+                        <li class="radio-answers"><label for="video"><input type="radio" name="activities" id="" value="7">Watching videos</label></li>
+                        <li class="radio-answers"><label for="buy"><input type="radio" name="activities" id="" value="8">Purchasing products/services</label></li>
+                        <li class="radio-answers"><label for="record"><input type="radio" name="activities" id="" value="9">Recording videos</label></li>
+                        <li class="radio-answers"><label for="text"><input type="radio" name="activities" id="" value="10">Sending/receiving text messages</label></li>
+                        <li class="radio-answers"><label for="photo"><input type="radio" name="activities" id="" value="11">Taking photos</label></li>
+                        <li class="radio-answers"><label for="socmed"><input type="radio" name="activities" id="" value="12">Using social media sites/apps</label></li>
+                        <li class="radio-answers"><label for="other"><input type="radio" name="activities" id="" value="13">Other</label></li>
+                    </ul>
+                </div>
             </div>
-            <button id="submit" type="submit">Let's do this</button>
+            <div class="row">
+                <div class="question">
+                    <label for="comments">In one sentence, describe your relationship with your smartphone</label>
+                </div>
+                <div class="answer">
+                    <textarea name="" id="comments" cols="30" rows="10" placeholder="My life would suck without my phone"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="question">
+                    <label for="canyou">Do you think you can spend an entire day without your smart phone?</label>
+                </div>
+                <div class="answer radio-container">
+                    <ul id="nophone">
+                        <li class="radio-answers"><label for=""><input type="radio" name="activities" id="" value="1">Sure, I think I can</label></li>
+                        <li class="radio-answers"><label for=""><input type="radio" name="activities" id="" value="2">I don't think I can</label></li>
+                        <li class="radio-answers"><label for=""><input type="radio" name="activities" id="" value="3">Maybe I could</label></li>
+                        <li class="radio-answers"><label for=""><input type="radio" name="activities" id="" value="4">Are you crazy??</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <button id="submit" type="submit">Let's do this!</button>
+            </div>
         </form>
-
     </main>
-    
-    
     <footer>
         <span id="footer">2018 &copy Dre Emanuel | A <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> Project</span>
     </footer>
